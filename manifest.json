@@ -1,0 +1,19 @@
+{
+  "name": "HKJC 足球角球多維度分析",
+  "short_name": "角球分析",
+  "description": "HKJC 足球角球多維度分析 Dashboard：EV 期望回報、戰術風格、盤口數據",
+  "start_url": "./corner_master_dashboard.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0e17",
+  "theme_color": "#0a0e17",
+  "icons": [
+    {
+      "src": "corner_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
