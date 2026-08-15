@@ -2,7 +2,7 @@
   "name": "HKJC 足球角球多維度分析",
   "short_name": "角球分析",
   "description": "HKJC 足球角球多維度分析 Dashboard：EV 期望回報、戰術風格、盤口數據",
-  "start_url": "./corner_master_dashboard.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
