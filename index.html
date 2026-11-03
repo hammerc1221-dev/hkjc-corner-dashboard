@@ -277,7 +277,7 @@
 <div class="top-bar">
     <h1>⚽ HKJC <span>角球多維度分析</span> Dashboard</h1>
     <div class="meta">
-        生成時間：2026-11-03 08:00:44<br>
+        生成時間：2026-11-03 17:30:19<br>
         全量分析 · 純客觀數學模型 × 深度戰術風格 | HKJC + SofaScore
         <button id="themeToggle" class="theme-btn" onclick="cycleTheme()" title="跟系統時間自動轉色，撳一下可手動切換">🌗 自動（跟時間）</button>
     </div>
@@ -295,7 +295,7 @@
 <div class="stats-grid">
     <div class="stat-box">
         <div class="label">分析賽事總數</div>
-        <div class="value blue">53</div>
+        <div class="value blue">40</div>
     </div>
     <div class="stat-box">
         <div class="label">走地中</div>
@@ -304,25 +304,25 @@
     </div>
     <div class="stat-box">
         <div class="label">未開賽</div>
-        <div class="value blue">52</div>
+        <div class="value blue">39</div>
         <div class="sub">初盤分析</div>
     </div>
     <div class="stat-box clickable" onclick="jumpToFilter('positive')" title="撳一下：跳落去下面表格並篩選出 +EV 場次">
         <div class="label">+EV 賽事</div>
-        <div class="value green">30</div>
+        <div class="value green">26</div>
         <div class="sub">模型機率 > 市場隱含 · 撳我跳轉睇</div>
     </div>
     <div class="stat-box clickable" onclick="jumpToFilter('strong')" title="撳一下：跳落去下面表格並篩選出強推薦場次">
         <div class="label">強推薦 (+EV>5%)</div>
-        <div class="value green">24</div>
+        <div class="value green">20</div>
         <div class="sub">值得重點關注 · 撳我跳轉睇</div>
     </div>
     <div class="stat-box">
         <div class="label">風險分佈</div>
         <div class="value" style="font-size:16px;">
-            <span style="color:#ff6b6b;">高0</span> /
-            <span style="color:#ffa502;">中18</span> /
-            <span style="color:#6bffa8;">低35</span>
+            <span style="color:#ff6b6b;">高1</span> /
+            <span style="color:#ffa502;">中6</span> /
+            <span style="color:#6bffa8;">低33</span>
         </div>
     </div>
 </div>
@@ -1117,7 +1117,7 @@
                         <strong>大</strong>
                     </td>
                     <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +66.2%
+                        +62.1%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -1176,31 +1176,6 @@
                 
                 <tr class="top-rec">
                     <td>4</td>
-                    <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis;">巴西甲組聯賽</td>
-                    <td><strong>巴拉干天奴紅牛</strong></td>
-                    <td><strong>山度士</strong></td>
-                    <td>
-                        
-                        <span class="tag">07:00</span>
-                        
-                    </td>
-                    <td>
-                        -
-                    </td>
-                    <td>11.5</td>
-                    <td>
-                        <strong>細</strong>
-                    </td>
-                    <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +42.7%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-low">低</span>
-                    </td>
-                </tr>
-                
-                <tr class="top-rec">
-                    <td>5</td>
                     <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis;">歐洲聯賽冠軍盃</td>
                     <td><strong>多蒙特</strong></td>
                     <td><strong>貝迪斯</strong></td>
@@ -1224,6 +1199,31 @@
                     </td>
                 </tr>
                 
+                <tr class="top-rec">
+                    <td>5</td>
+                    <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis;">歐洲聯賽冠軍盃</td>
+                    <td><strong>朗斯</strong></td>
+                    <td><strong>科木</strong></td>
+                    <td>
+                        
+                        <span class="tag">04:00</span>
+                        
+                    </td>
+                    <td>
+                        -
+                    </td>
+                    <td>9.5</td>
+                    <td>
+                        <strong>大</strong>
+                    </td>
+                    <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
+                        +38.1%
+                    </td>
+                    <td>
+                        <span class="tag tag-risk-low">低</span>
+                    </td>
+                </tr>
+                
             </tbody>
         </table>
         <div class="note" style="padding:12px 24px;">
@@ -1237,16 +1237,16 @@
 <!-- ===== 全部賽事總覽表 ===== -->
 <div class="section-title">
     全部賽事分析總覽
-    <span class="badge">共 53 場</span>
+    <span class="badge">共 40 場</span>
     <span class="badge badge-live">1 場走地</span>
 </div>
 
 <div class="filter-bar">
-    <button class="filter-btn active" data-filter="all" onclick="filterMatches('all', this)">全部 (53)</button>
+    <button class="filter-btn active" data-filter="all" onclick="filterMatches('all', this)">全部 (40)</button>
     <button class="filter-btn" data-filter="live" onclick="filterMatches('live', this)">走地中 (1)</button>
-    <button class="filter-btn" data-filter="pre" onclick="filterMatches('pre', this)">未開賽 (52)</button>
-    <button class="filter-btn" data-filter="positive" onclick="filterMatches('positive', this)">+EV (30)</button>
-    <button class="filter-btn" data-filter="strong" onclick="filterMatches('strong', this)">強推薦 (24)</button>
+    <button class="filter-btn" data-filter="pre" onclick="filterMatches('pre', this)">未開賽 (39)</button>
+    <button class="filter-btn" data-filter="positive" onclick="filterMatches('positive', this)">+EV (26)</button>
+    <button class="filter-btn" data-filter="strong" onclick="filterMatches('strong', this)">強推薦 (20)</button>
 </div>
 
 <div class="legend-bar">
@@ -1279,136 +1279,41 @@
             </thead>
             <tbody>
                 
-                <tr class="click-row" data-status="pre" data-ev="pos" data-strong="yes" onclick="toggleDetail('detail-FB8088', this)">
-                    <td>FB8088</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="巴西甲組聯賽">巴西甲組聯賽</td>
-                    <td><strong>巴拉干天奴紅牛</strong></td>
-                    <td><strong>山度士</strong></td>
-                    <td>07:00</td>
+                <tr class="click-row" data-status="live" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8260', this)">
+                    <td>FB8260</td>
+                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="亞冠精英盃">亞冠精英盃</td>
+                    <td><strong>紐卡素噴射機</strong></td>
+                    <td><strong>上海海港</strong></td>
+                    <td>15:45</td>
                     <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>11.5</strong></td>
-                    <td>2.25</td>
-                    <td>1.57</td>
-                    <td>7.69</td>
-                    <td>
-                        <strong>細</strong>
-                    </td>
-                    <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +42.7%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-low">低</span>
-                    </td>
-                    <td>76.5</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="兩隊都唔算極端，邊路中路輪住攻，角球產出睇當日心情。 睇近期產出，巴拉干天奴紅牛 明顯撳住 山度士 嚟打，除非戰局有變，否則圍攻場面唔少。 模型只數到 7.69 粒，馬會仲開 8.5 線，細波先係真愛。">💬 兩隊都唔算極端，邊路中路輪住攻，角球產出睇當日心情。 睇近期產出，巴拉干天奴紅牛 明顯撳住 山度士 嚟打，除非戰局有變，否則圍攻場面唔少。 模型只數到 7.69 粒，馬會仲開 8.5 線，細波先係真愛。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8088">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>兩隊都唔算極端，邊路中路輪住攻，角球產出睇當日心情。 睇近期產出，巴拉干天奴紅牛 明顯撳住 山度士 嚟打，除非戰局有變，否則圍攻場面唔少。 模型只數到 7.69 粒，馬會仲開 8.5 線，細波先係真愛。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 11.5</td>
-                                            <td>2.25</td>
-                                            <td>9.09%</td>
-                                            <td class="ev-neg">-79.5%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 11.5</td>
-                                            <td>1.57</td>
-                                            <td>90.91%</td>
-                                            <td class="ev-pos">+42.7%</td>
-                                            <td><span class="tag tag-hot">+EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.073</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.42 + 2.0</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>7.69</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均0.0) / 客 8 場 (均5.5)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="live" data-ev="pos" data-strong="yes" onclick="toggleDetail('detail-FB8216', this)">
-                    <td>FB8216</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="智利甲組聯賽">智利甲組聯賽</td>
-                    <td><strong>康塞普森體育</strong></td>
-                    <td><strong>柏利斯天奴</strong></td>
-                    <td>07:27</td>
-                    <td>
-                        <span class="tag tag-live">走地 33'</span>
+                        <span class="tag tag-live">走地 90'</span>
                         
                     </td>
-                    <td>0-0</td>
-                    <td>5</td>
-                    <td><strong>12.5</strong></td>
-                    <td>2.08</td>
-                    <td>1.66</td>
-                    <td>11.05</td>
+                    <td>2-4</td>
+                    <td>10</td>
+                    <td><strong>11.5</strong></td>
+                    <td>3.2</td>
+                    <td>1.29</td>
+                    <td>10.0</td>
                     <td>
-                        <strong>細</strong>
+                        <strong>大</strong>
                     </td>
-                    <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +13.4%
+                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
+                        -3.0%
                     </td>
                     <td>
-                        <span class="tag tag-risk-med">中</span>
+                        <span class="tag tag-risk-high">高</span>
                         
                     </td>
                     <td>59.2</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="康塞普森體育 一味打邊路傳中，柏利斯天奴 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 睇近期產出，康塞普森體育 明顯撳住 柏利斯天奴 嚟打，除非戰局有變，否則圍攻場面唔少。 模型只數到 11.05 粒，馬會仲開 12.5 線，細波先係真愛。">💬 康塞普森體育 一味打邊路傳中，柏利斯天奴 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 睇近期產出，康塞普森體育 明顯撳住 柏利斯天奴 嚟打，除非戰局有變，否則圍攻場面唔少。 模型只數到 11.05 粒，馬會仲開 12.5 線，細波先係真愛。</td>
+                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="紐卡素噴射機 對 上海海港 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型只數到 10.0 粒，馬會仲開 11.5 線，細波先係真愛。">💬 紐卡素噴射機 對 上海海港 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型只數到 10.0 粒，馬會仲開 11.5 線，細波先係真愛。</td>
                 </tr>
                 <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8216">
+                <tr class="match-detail" id="detail-FB8260">
                     <td colspan="17">
                         <div class="detail-inner">
                             <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>康塞普森體育 一味打邊路傳中，柏利斯天奴 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 睇近期產出，康塞普森體育 明顯撳住 柏利斯天奴 嚟打，除非戰局有變，否則圍攻場面唔少。 模型只數到 11.05 粒，馬會仲開 12.5 線，細波先係真愛。
+                                💬 <strong>評語：</strong>紐卡素噴射機 對 上海海港 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型只數到 10.0 粒，馬會仲開 11.5 線，細波先係真愛。
                             </div>
                             <div class="detail-grid">
                                 <!-- 左欄：初盤/走地 EV 分析 -->
@@ -1426,1176 +1331,17 @@
                                         </tr>
                                         
                                         <tr>
-                                            <td>大 12.5</td>
-                                            <td>2.08</td>
-                                            <td>31.68%</td>
-                                            <td class="ev-neg">-34.1%</td>
+                                            <td>大 11.5</td>
+                                            <td>3.2</td>
+                                            <td>30.32%</td>
+                                            <td class="ev-neg">-3.0%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         <tr>
-                                            <td>細 12.5</td>
-                                            <td>1.66</td>
-                                            <td>68.32%</td>
-                                            <td class="ev-pos">+13.4%</td>
-                                            <td><span class="tag tag-hot">+EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 邊路突破型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.126</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-                                    <h4>即時戰術數據（SofaScore）</h4>
-                                    
-                                    <div class="warn-bar">未能取得實時統計</div>
-                                    
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>8.0 + 3.4</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>12.81</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">動態 xC</td><td>11.05</td></tr>
-                                        <tr><td style="color:#7a8a9a;">剩餘時間</td><td>57'</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 1 場 (均7.0) / 客 3 場 (均5.67)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8121', this)">
-                    <td>FB8121</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="阿根廷甲組聯賽">阿根廷甲組聯賽</td>
-                    <td><strong>利華達維亞獨立</strong></td>
-                    <td><strong>班菲特</strong></td>
-                    <td>08:13</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>2.13</td>
-                    <td>1.63</td>
-                    <td>9.42</td>
-                    <td>
-                        <strong>大</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -0.4%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-low">低</span>
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="兩隊都唔算極端，邊路中路輪住攻，角球產出睇當日心情。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.42 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 兩隊都唔算極端，邊路中路輪住攻，角球產出睇當日心情。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.42 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8121">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>兩隊都唔算極端，邊路中路輪住攻，角球產出睇當日心情。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.42 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>2.13</td>
-                                            <td>46.78%</td>
-                                            <td class="ev-neg">-0.4%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.63</td>
-                                            <td>53.22%</td>
-                                            <td class="ev-neg">-13.3%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0954</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.27 + 4.3</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.42</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 8 場 (均5.12) / 客 6 場 (均3.83)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="pos" data-strong="yes" onclick="toggleDetail('detail-FB8271', this)">
-                    <td>FB8271</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>富山勝利</strong></td>
-                    <td><strong>仙台維加泰</strong></td>
-                    <td>12:55</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>10.5</strong></td>
-                    <td>2.22</td>
-                    <td>1.58</td>
-                    <td>10.5</td>
-                    <td>
-                        <strong>大</strong>
-                    </td>
-                    <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +6.4%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="富山勝利 對 仙台維加泰 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。">💬 富山勝利 對 仙台維加泰 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8271">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>富山勝利 對 仙台維加泰 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 10.5</td>
-                                            <td>2.22</td>
-                                            <td>47.93%</td>
-                                            <td class="ev-pos">+6.4%</td>
-                                            <td><span class="tag tag-hot">+EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 10.5</td>
-                                            <td>1.58</td>
-                                            <td>52.07%</td>
-                                            <td class="ev-neg">-17.7%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>5.46 + 5.04</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>10.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8274', this)">
-                    <td>FB8274</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>FC橫濱</strong></td>
-                    <td><strong>秋田藍閃電</strong></td>
-                    <td>13:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>2.01</td>
-                    <td>1.71</td>
-                    <td>9.5</td>
-                    <td>
-                        <strong>大</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -3.9%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="FC橫濱 對 秋田藍閃電 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 FC橫濱 對 秋田藍閃電 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8274">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>FC橫濱 對 秋田藍閃電 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>2.01</td>
-                                            <td>47.82%</td>
-                                            <td class="ev-neg">-3.9%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.71</td>
-                                            <td>52.18%</td>
-                                            <td class="ev-neg">-10.8%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.94 + 4.56</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="pos" data-strong="yes" onclick="toggleDetail('detail-FB8275', this)">
-                    <td>FB8275</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>RB大宮松鼠</strong></td>
-                    <td><strong>磐城FC</strong></td>
-                    <td>13:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>10.5</strong></td>
-                    <td>2.25</td>
-                    <td>1.57</td>
-                    <td>10.5</td>
-                    <td>
-                        <strong>大</strong>
-                    </td>
-                    <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +7.8%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="RB大宮松鼠 同 磐城FC 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。">💬 RB大宮松鼠 同 磐城FC 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8275">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>RB大宮松鼠 同 磐城FC 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 10.5</td>
-                                            <td>2.25</td>
-                                            <td>47.93%</td>
-                                            <td class="ev-pos">+7.8%</td>
-                                            <td><span class="tag tag-hot">+EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 10.5</td>
-                                            <td>1.57</td>
-                                            <td>52.07%</td>
-                                            <td class="ev-neg">-18.3%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>5.46 + 5.04</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>10.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8273', this)">
-                    <td>FB8273</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>湘南比馬</strong></td>
-                    <td><strong>鳥棲砂岩</strong></td>
-                    <td>13:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>1.85</td>
-                    <td>1.85</td>
-                    <td>9.5</td>
-                    <td>
-                        <strong>細</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -3.5%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="湘南比馬 同 鳥棲砂岩 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 湘南比馬 同 鳥棲砂岩 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8273">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>湘南比馬 同 鳥棲砂岩 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>1.85</td>
-                                            <td>47.82%</td>
-                                            <td class="ev-neg">-11.5%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.85</td>
-                                            <td>52.18%</td>
-                                            <td class="ev-neg">-3.5%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.94 + 4.56</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8278', this)">
-                    <td>FB8278</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>藤枝MYFC</strong></td>
-                    <td><strong>磐田山葉</strong></td>
-                    <td>13:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>1.91</td>
-                    <td>1.79</td>
-                    <td>9.5</td>
-                    <td>
-                        <strong>細</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -6.6%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="藤枝MYFC 對 磐田山葉 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 藤枝MYFC 對 磐田山葉 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8278">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>藤枝MYFC 對 磐田山葉 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>1.91</td>
-                                            <td>47.82%</td>
-                                            <td class="ev-neg">-8.7%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.79</td>
-                                            <td>52.18%</td>
-                                            <td class="ev-neg">-6.6%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.94 + 4.56</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8270', this)">
-                    <td>FB8270</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>山形山神</strong></td>
-                    <td><strong>德島漩渦</strong></td>
-                    <td>13:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>2.05</td>
-                    <td>1.68</td>
-                    <td>9.5</td>
-                    <td>
-                        <strong>大</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -2.0%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="山形山神 同 德島漩渦 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 山形山神 同 德島漩渦 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8270">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>山形山神 同 德島漩渦 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>2.05</td>
-                                            <td>47.82%</td>
-                                            <td class="ev-neg">-2.0%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.68</td>
-                                            <td>52.18%</td>
-                                            <td class="ev-neg">-12.3%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.94 + 4.56</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8276', this)">
-                    <td>FB8276</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>大分三神</strong></td>
-                    <td><strong>八戶雲羅里</strong></td>
-                    <td>13:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>2.08</td>
-                    <td>1.66</td>
-                    <td>9.5</td>
-                    <td>
-                        <strong>大</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -0.5%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="大分三神 同 八戶雲羅里 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 大分三神 同 八戶雲羅里 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8276">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>大分三神 同 八戶雲羅里 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>2.08</td>
-                                            <td>47.82%</td>
-                                            <td class="ev-neg">-0.5%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.66</td>
-                                            <td>52.18%</td>
-                                            <td class="ev-neg">-13.4%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.94 + 4.56</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8277', this)">
-                    <td>FB8277</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>宮崎棒牛鳥</strong></td>
-                    <td><strong>櫪木城</strong></td>
-                    <td>13:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>1.86</td>
-                    <td>1.84</td>
-                    <td>9.5</td>
-                    <td>
-                        <strong>細</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -4.0%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="宮崎棒牛鳥 對 櫪木城 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 宮崎棒牛鳥 對 櫪木城 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8277">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>宮崎棒牛鳥 對 櫪木城 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>1.86</td>
-                                            <td>47.82%</td>
-                                            <td class="ev-neg">-11.1%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.84</td>
-                                            <td>52.18%</td>
-                                            <td class="ev-neg">-4.0%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.94 + 4.56</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8272', this)">
-                    <td>FB8272</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>甲府風林</strong></td>
-                    <td><strong>新潟天鵝</strong></td>
-                    <td>13:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>2.0</td>
-                    <td>1.72</td>
-                    <td>9.5</td>
-                    <td>
-                        <strong>大</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -4.4%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="甲府風林 對 新潟天鵝 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 甲府風林 對 新潟天鵝 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8272">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>甲府風林 對 新潟天鵝 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 雙方實力唔懸殊，你攻我往節奏應該唔慢。 模型 9.5 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>2.0</td>
-                                            <td>47.82%</td>
-                                            <td class="ev-neg">-4.4%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.72</td>
-                                            <td>52.18%</td>
-                                            <td class="ev-neg">-10.3%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>4.94 + 4.56</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="pos" data-strong="no" onclick="toggleDetail('detail-FB8279', this)">
-                    <td>FB8279</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="日本乙組聯賽">日本乙組聯賽</td>
-                    <td><strong>FC今治</strong></td>
-                    <td><strong>北海道札幌岡薩多</strong></td>
-                    <td>13:50</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>10.5</strong></td>
-                    <td>2.19</td>
-                    <td>1.6</td>
-                    <td>10.5</td>
-                    <td>
-                        <strong>大</strong>
-                    </td>
-                    <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +5.0%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>52.1</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="FC今治 同 北海道札幌岡薩多 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。">💬 FC今治 同 北海道札幌岡薩多 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8279">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>FC今治 同 北海道札幌岡薩多 呢場近況數據欠奉，分析佢哋好似開盲盒——不過盲盒都有盲盒嘅刺激。 兩隊半斤八両，呢場好大機會係拉鋸戰。 模型 10.5 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 10.5</td>
-                                            <td>2.19</td>
-                                            <td>47.93%</td>
-                                            <td class="ev-pos">+5.0%</td>
-                                            <td><span class="tag tag-hot">+EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 10.5</td>
-                                            <td>1.6</td>
-                                            <td>52.07%</td>
-                                            <td class="ev-neg">-16.7%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 中路控球型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.0</span>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>5.46 + 5.04</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>10.5</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 0 場 (均-) / 客 0 場 (均-)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8260', this)">
-                    <td>FB8260</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="亞冠精英盃">亞冠精英盃</td>
-                    <td><strong>紐卡素噴射機</strong></td>
-                    <td><strong>上海海港</strong></td>
-                    <td>15:45</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>10.5</strong></td>
-                    <td>2.05</td>
-                    <td>1.68</td>
-                    <td>10.19</td>
-                    <td>
-                        <strong>細</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -6.0%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-med">中</span>
-                        
-                    </td>
-                    <td>59.2</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="紐卡素噴射機 對 上海海港 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 10.19 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。">💬 紐卡素噴射機 對 上海海港 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 10.19 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8260">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>紐卡素噴射機 對 上海海港 冇近況參考，唯有睇盤口說話：馬會開咩線，佢哋心裏都有數。 兩隊半斤八両，呢場好大機會係拉鋸戰。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 10.19 粒同馬會 10.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 10.5</td>
-                                            <td>2.05</td>
-                                            <td>44.07%</td>
-                                            <td class="ev-neg">-9.7%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 10.5</td>
-                                            <td>1.68</td>
-                                            <td>55.93%</td>
-                                            <td class="ev-neg">-6.0%</td>
+                                            <td>細 11.5</td>
+                                            <td>1.29</td>
+                                            <td>69.68%</td>
+                                            <td class="ev-neg">-10.1%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
@@ -2614,11 +1360,19 @@
                                 <!-- 右欄：即時戰術數據 -->
                                 <div class="detail-section">
                                     
+                                    <h4>即時戰術數據（SofaScore）</h4>
+                                    
+                                    <div class="warn-bar">未能取得實時統計</div>
+                                    
+                                    
 
                                     <h4 style="margin-top:16px;">模型參數</h4>
                                     <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>5.46 + 5.04</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>10.19</td></tr>
+                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>5.98 + 5.52</td></tr>
+                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>11.15</td></tr>
+                                        
+                                        <tr><td style="color:#7a8a9a;">動態 xC</td><td>10.0</td></tr>
+                                        <tr><td style="color:#7a8a9a;">剩餘時間</td><td>0'</td></tr>
                                         
                                         <tr><td style="color:#7a8a9a;">近況數據</td>
                                             <td>主 0 場 (均-) / 客 0 場 (均-)</td>
@@ -2630,7 +1384,7 @@
                     </td>
                 </tr>
                 
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8248', this)">
+                <tr class="click-row" data-status="pre" data-ev="pos" data-strong="no" onclick="toggleDetail('detail-FB8248', this)">
                     <td>FB8248</td>
                     <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="亞冠精英盃">亞冠精英盃</td>
                     <td><strong>柏雷素爾</strong></td>
@@ -2642,14 +1396,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>9.5</strong></td>
-                    <td>2.05</td>
-                    <td>1.68</td>
+                    <td>1.85</td>
+                    <td>1.85</td>
                     <td>9.22</td>
                     <td>
                         <strong>細</strong>
                     </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -6.2%
+                    <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
+                        +3.3%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -2681,17 +1435,17 @@
                                         
                                         <tr>
                                             <td>大 9.5</td>
-                                            <td>2.05</td>
+                                            <td>1.85</td>
                                             <td>44.16%</td>
-                                            <td class="ev-neg">-9.5%</td>
+                                            <td class="ev-neg">-18.3%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 9.5</td>
-                                            <td>1.68</td>
+                                            <td>1.85</td>
                                             <td>55.84%</td>
-                                            <td class="ev-neg">-6.2%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
+                                            <td class="ev-pos">+3.3%</td>
+                                            <td><span class="tag tag-hot">+EV</span></td>
                                         </tr>
                                         
                                     </table>
@@ -2737,14 +1491,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>9.5</strong></td>
-                    <td>2.01</td>
-                    <td>1.71</td>
+                    <td>2.05</td>
+                    <td>1.68</td>
                     <td>9.21</td>
                     <td>
                         <strong>細</strong>
                     </td>
                     <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -4.3%
+                        -6.0%
                     </td>
                     <td>
                         <span class="tag tag-risk-med">中</span>
@@ -2777,16 +1531,16 @@
                                         
                                         <tr>
                                             <td>大 9.5</td>
-                                            <td>2.01</td>
+                                            <td>2.05</td>
                                             <td>44.02%</td>
-                                            <td class="ev-neg">-11.5%</td>
+                                            <td class="ev-neg">-9.8%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 9.5</td>
-                                            <td>1.71</td>
+                                            <td>1.68</td>
                                             <td>55.98%</td>
-                                            <td class="ev-neg">-4.3%</td>
+                                            <td class="ev-neg">-6.0%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
@@ -2833,14 +1587,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>10.5</strong></td>
-                    <td>2.15</td>
-                    <td>1.62</td>
+                    <td>1.98</td>
+                    <td>1.73</td>
                     <td>10.12</td>
                     <td>
-                        <strong>大</strong>
+                        <strong>細</strong>
                     </td>
                     <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -7.1%
+                        -1.7%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -2872,16 +1626,16 @@
                                         
                                         <tr>
                                             <td>大 10.5</td>
-                                            <td>2.15</td>
+                                            <td>1.98</td>
                                             <td>43.2%</td>
-                                            <td class="ev-neg">-7.1%</td>
+                                            <td class="ev-neg">-14.5%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 10.5</td>
-                                            <td>1.62</td>
+                                            <td>1.73</td>
                                             <td>56.8%</td>
-                                            <td class="ev-neg">-8.0%</td>
+                                            <td class="ev-neg">-1.7%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
@@ -3023,14 +1777,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>9.5</strong></td>
-                    <td>1.94</td>
-                    <td>1.76</td>
+                    <td>2.02</td>
+                    <td>1.7</td>
                     <td>9.24</td>
                     <td>
                         <strong>細</strong>
                     </td>
                     <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -2.2%
+                        -5.5%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -3062,16 +1816,16 @@
                                         
                                         <tr>
                                             <td>大 9.5</td>
-                                            <td>1.94</td>
+                                            <td>2.02</td>
                                             <td>44.42%</td>
-                                            <td class="ev-neg">-13.8%</td>
+                                            <td class="ev-neg">-10.3%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 9.5</td>
-                                            <td>1.76</td>
+                                            <td>1.7</td>
                                             <td>55.58%</td>
-                                            <td class="ev-neg">-2.2%</td>
+                                            <td class="ev-neg">-5.5%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
@@ -3501,14 +2255,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>10.5</strong></td>
-                    <td>1.97</td>
-                    <td>1.74</td>
+                    <td>2.07</td>
+                    <td>1.67</td>
                     <td>11.32</td>
                     <td>
                         <strong>大</strong>
                     </td>
                     <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +13.8%
+                        +19.6%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -3540,16 +2294,16 @@
                                         
                                         <tr>
                                             <td>大 10.5</td>
-                                            <td>1.97</td>
+                                            <td>2.07</td>
                                             <td>57.77%</td>
-                                            <td class="ev-pos">+13.8%</td>
+                                            <td class="ev-pos">+19.6%</td>
                                             <td><span class="tag tag-hot">+EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 10.5</td>
-                                            <td>1.74</td>
+                                            <td>1.67</td>
                                             <td>42.23%</td>
-                                            <td class="ev-neg">-26.5%</td>
+                                            <td class="ev-neg">-29.5%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
@@ -4072,14 +2826,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>9.5</strong></td>
-                    <td>1.84</td>
-                    <td>1.86</td>
+                    <td>1.75</td>
+                    <td>1.95</td>
                     <td>10.84</td>
                     <td>
                         <strong>大</strong>
                     </td>
                     <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +18.1%
+                        +12.3%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -4111,16 +2865,16 @@
                                         
                                         <tr>
                                             <td>大 9.5</td>
-                                            <td>1.84</td>
+                                            <td>1.75</td>
                                             <td>64.19%</td>
-                                            <td class="ev-pos">+18.1%</td>
+                                            <td class="ev-pos">+12.3%</td>
                                             <td><span class="tag tag-hot">+EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 9.5</td>
-                                            <td>1.86</td>
+                                            <td>1.95</td>
                                             <td>35.81%</td>
-                                            <td class="ev-neg">-33.4%</td>
+                                            <td class="ev-neg">-30.2%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
@@ -4262,14 +3016,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>9.5</strong></td>
-                    <td>2.05</td>
-                    <td>1.68</td>
+                    <td>2.0</td>
+                    <td>1.72</td>
                     <td>12.66</td>
                     <td>
                         <strong>大</strong>
                     </td>
                     <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +66.2%
+                        +62.1%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -4301,16 +3055,16 @@
                                         
                                         <tr>
                                             <td>大 9.5</td>
-                                            <td>2.05</td>
+                                            <td>2.0</td>
                                             <td>81.05%</td>
-                                            <td class="ev-pos">+66.2%</td>
+                                            <td class="ev-pos">+62.1%</td>
                                             <td><span class="tag tag-hot">+EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 9.5</td>
-                                            <td>1.68</td>
+                                            <td>1.72</td>
                                             <td>18.95%</td>
-                                            <td class="ev-neg">-68.2%</td>
+                                            <td class="ev-neg">-67.4%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
@@ -4357,14 +3111,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>9.5</strong></td>
-                    <td>2.01</td>
-                    <td>1.71</td>
+                    <td>1.91</td>
+                    <td>1.79</td>
                     <td>8.35</td>
                     <td>
                         <strong>細</strong>
                     </td>
                     <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +15.0%
+                        +20.4%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -4396,16 +3150,16 @@
                                         
                                         <tr>
                                             <td>大 9.5</td>
-                                            <td>2.01</td>
+                                            <td>1.91</td>
                                             <td>32.76%</td>
-                                            <td class="ev-neg">-34.2%</td>
+                                            <td class="ev-neg">-37.4%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 9.5</td>
-                                            <td>1.71</td>
+                                            <td>1.79</td>
                                             <td>67.24%</td>
-                                            <td class="ev-pos">+15.0%</td>
+                                            <td class="ev-pos">+20.4%</td>
                                             <td><span class="tag tag-hot">+EV</span></td>
                                         </tr>
                                         
@@ -4547,14 +3301,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>10.5</strong></td>
-                    <td>1.98</td>
-                    <td>1.73</td>
+                    <td>1.91</td>
+                    <td>1.79</td>
                     <td>12.23</td>
                     <td>
                         <strong>大</strong>
                     </td>
                     <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +33.9%
+                        +29.2%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -4586,16 +3340,16 @@
                                         
                                         <tr>
                                             <td>大 10.5</td>
-                                            <td>1.98</td>
+                                            <td>1.91</td>
                                             <td>67.64%</td>
-                                            <td class="ev-pos">+33.9%</td>
+                                            <td class="ev-pos">+29.2%</td>
                                             <td><span class="tag tag-hot">+EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 10.5</td>
-                                            <td>1.73</td>
+                                            <td>1.79</td>
                                             <td>32.36%</td>
-                                            <td class="ev-neg">-44.0%</td>
+                                            <td class="ev-neg">-42.1%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
@@ -5296,101 +4050,6 @@
                     </td>
                 </tr>
                 
-                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8283', this)">
-                    <td>FB8283</td>
-                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="歐洲聯賽冠軍盃">歐洲聯賽冠軍盃</td>
-                    <td><strong>波圖</strong></td>
-                    <td><strong>拿玻里</strong></td>
-                    <td>04:00</td>
-                    <td>
-                        <span class="tag">未開賽</span>
-                    </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><strong>9.5</strong></td>
-                    <td>2.0</td>
-                    <td>1.72</td>
-                    <td>9.24</td>
-                    <td>
-                        <strong>細</strong>
-                    </td>
-                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
-                        -4.4%
-                    </td>
-                    <td>
-                        <span class="tag tag-risk-low">低</span>
-                    </td>
-                    <td>59.2</td>
-                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="波圖 一味打邊路傳中，拿玻里 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 客場嘅 拿玻里 產出反而更惡，波圖 後防今日有排忙。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 9.24 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 波圖 一味打邊路傳中，拿玻里 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 客場嘅 拿玻里 產出反而更惡，波圖 後防今日有排忙。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 9.24 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
-                </tr>
-                <!-- 展開詳情行 -->
-                <tr class="match-detail" id="detail-FB8283">
-                    <td colspan="17">
-                        <div class="detail-inner">
-                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
-                                💬 <strong>評語：</strong>波圖 一味打邊路傳中，拿玻里 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 客場嘅 拿玻里 產出反而更惡，波圖 後防今日有排忙。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 9.24 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
-                            </div>
-                            <div class="detail-grid">
-                                <!-- 左欄：初盤/走地 EV 分析 -->
-                                <div class="detail-section">
-                                    <h4>
-                                        初盤 EV 分析
-                                    </h4>
-                                    <table>
-                                        <tr>
-                                            <td style="color:#7a8a9a;">盤口</td>
-                                            <td style="color:#7a8a9a;">賠率</td>
-                                            <td style="color:#7a8a9a;">客觀機率</td>
-                                            <td style="color:#7a8a9a;">EV</td>
-                                            <td style="color:#7a8a9a;">建議</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>大 9.5</td>
-                                            <td>2.0</td>
-                                            <td>44.42%</td>
-                                            <td class="ev-neg">-11.2%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>細 9.5</td>
-                                            <td>1.72</td>
-                                            <td>55.58%</td>
-                                            <td class="ev-neg">-4.4%</td>
-                                            <td><span class="tag tag-cold">-EV</span></td>
-                                        </tr>
-                                        
-                                    </table>
-
-                                    <h4 style="margin-top:16px;">戰術風格</h4>
-                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
-                                    <div style="margin-top:8px;">
-                                        <span class="tag">主隊: 邊路突破型</span>
-                                        <span class="tag">客隊: 中路控球型</span>
-                                        <span class="tag">戰術倍率: 1.1313</span>
-                                        <span class="tag tag-hot">盃賽 ×0.97</span>
-                                    </div>
-                                </div>
-
-                                <!-- 右欄：即時戰術數據 -->
-                                <div class="detail-section">
-                                    
-
-                                    <h4 style="margin-top:16px;">模型參數</h4>
-                                    <table>
-                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>2.93 + 5.3</td></tr>
-                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.24</td></tr>
-                                        
-                                        <tr><td style="color:#7a8a9a;">近況數據</td>
-                                            <td>主 6 場 (均7.33) / 客 3 場 (均5.67)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                
                 <tr class="click-row" data-status="pre" data-ev="pos" data-strong="yes" onclick="toggleDetail('detail-FB8291', this)">
                     <td>FB8291</td>
                     <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="歐洲聯賽冠軍盃">歐洲聯賽冠軍盃</td>
@@ -5573,6 +4232,101 @@
                                         
                                         <tr><td style="color:#7a8a9a;">近況數據</td>
                                             <td>主 0 場 (均0.0) / 客 8 場 (均5.0)</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr class="click-row" data-status="pre" data-ev="neg" data-strong="no" onclick="toggleDetail('detail-FB8283', this)">
+                    <td>FB8283</td>
+                    <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;" title="歐洲聯賽冠軍盃">歐洲聯賽冠軍盃</td>
+                    <td><strong>波圖</strong></td>
+                    <td><strong>拿玻里</strong></td>
+                    <td>04:00</td>
+                    <td>
+                        <span class="tag">未開賽</span>
+                    </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><strong>9.5</strong></td>
+                    <td>2.0</td>
+                    <td>1.72</td>
+                    <td>9.24</td>
+                    <td>
+                        <strong>細</strong>
+                    </td>
+                    <td class="ev-neg" title="期望回報：每投注 $100 的長期預期盈虧">
+                        -4.4%
+                    </td>
+                    <td>
+                        <span class="tag tag-risk-low">低</span>
+                    </td>
+                    <td>59.2</td>
+                    <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#9ab0c6;" title="波圖 一味打邊路傳中，拿玻里 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 客場嘅 拿玻里 產出反而更惡，波圖 後防今日有排忙。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 9.24 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。">💬 波圖 一味打邊路傳中，拿玻里 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 客場嘅 拿玻里 產出反而更惡，波圖 後防今日有排忙。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 9.24 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。</td>
+                </tr>
+                <!-- 展開詳情行 -->
+                <tr class="match-detail" id="detail-FB8283">
+                    <td colspan="17">
+                        <div class="detail-inner">
+                            <div style="background:rgba(255,196,0,0.07);border-left:4px solid #ffc400;padding:10px 14px;border-radius:6px;margin-bottom:14px;font-size:13px;line-height:1.8;color:#d8c89a;">
+                                💬 <strong>評語：</strong>波圖 一味打邊路傳中，拿玻里 後防唔忙得閒，安全波照例踢出底線——角球就係咁嚟嘅。 客場嘅 拿玻里 產出反而更惡，波圖 後防今日有排忙。 盃賽一場過，緊張程度自動加乘，角球隨時多幾粒。 模型 9.24 粒同馬會 9.5 線大眼望小眼，呢場係睇運氣級別。
+                            </div>
+                            <div class="detail-grid">
+                                <!-- 左欄：初盤/走地 EV 分析 -->
+                                <div class="detail-section">
+                                    <h4>
+                                        初盤 EV 分析
+                                    </h4>
+                                    <table>
+                                        <tr>
+                                            <td style="color:#7a8a9a;">盤口</td>
+                                            <td style="color:#7a8a9a;">賠率</td>
+                                            <td style="color:#7a8a9a;">客觀機率</td>
+                                            <td style="color:#7a8a9a;">EV</td>
+                                            <td style="color:#7a8a9a;">建議</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>大 9.5</td>
+                                            <td>2.0</td>
+                                            <td>44.42%</td>
+                                            <td class="ev-neg">-11.2%</td>
+                                            <td><span class="tag tag-cold">-EV</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>細 9.5</td>
+                                            <td>1.72</td>
+                                            <td>55.58%</td>
+                                            <td class="ev-neg">-4.4%</td>
+                                            <td><span class="tag tag-cold">-EV</span></td>
+                                        </tr>
+                                        
+                                    </table>
+
+                                    <h4 style="margin-top:16px;">戰術風格</h4>
+                                    <p style="font-size:12px;line-height:1.8;color:#a0b0c0;">雙方戰術風格接近，邊路與中路攻防交替，角球產出取決於開局後的戰術調整與比賽狀態。</p>
+                                    <div style="margin-top:8px;">
+                                        <span class="tag">主隊: 邊路突破型</span>
+                                        <span class="tag">客隊: 中路控球型</span>
+                                        <span class="tag">戰術倍率: 1.1313</span>
+                                        <span class="tag tag-hot">盃賽 ×0.97</span>
+                                    </div>
+                                </div>
+
+                                <!-- 右欄：即時戰術數據 -->
+                                <div class="detail-section">
+                                    
+
+                                    <h4 style="margin-top:16px;">模型參數</h4>
+                                    <table>
+                                        <tr><td style="color:#7a8a9a;">基礎 xC（主+客）</td><td>2.93 + 5.3</td></tr>
+                                        <tr><td style="color:#7a8a9a;">初始 xC</td><td>9.24</td></tr>
+                                        
+                                        <tr><td style="color:#7a8a9a;">近況數據</td>
+                                            <td>主 6 場 (均7.33) / 客 3 場 (均5.67)</td>
                                         </tr>
                                     </table>
                                 </div>
@@ -5878,14 +4632,14 @@
                     <td>-</td>
                     <td>-</td>
                     <td><strong>12.5</strong></td>
-                    <td>2.13</td>
-                    <td>1.63</td>
+                    <td>2.17</td>
+                    <td>1.61</td>
                     <td>13.73</td>
                     <td>
                         <strong>大</strong>
                     </td>
                     <td class="ev-pos" title="期望回報：每投注 $100 的長期預期盈虧">
-                        +30.9%
+                        +33.3%
                     </td>
                     <td>
                         <span class="tag tag-risk-low">低</span>
@@ -5917,16 +4671,16 @@
                                         
                                         <tr>
                                             <td>大 12.5</td>
-                                            <td>2.13</td>
+                                            <td>2.17</td>
                                             <td>61.45%</td>
-                                            <td class="ev-pos">+30.9%</td>
+                                            <td class="ev-pos">+33.3%</td>
                                             <td><span class="tag tag-hot">+EV</span></td>
                                         </tr>
                                         <tr>
                                             <td>細 12.5</td>
-                                            <td>1.63</td>
+                                            <td>1.61</td>
                                             <td>38.55%</td>
-                                            <td class="ev-neg">-37.2%</td>
+                                            <td class="ev-neg">-37.9%</td>
                                             <td><span class="tag tag-cold">-EV</span></td>
                                         </tr>
                                         
